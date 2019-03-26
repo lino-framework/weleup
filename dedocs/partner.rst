@@ -14,7 +14,7 @@ Partner
 
 .. doctest init
     >>> from lino import startup
-    >>> startup('lino_weleup.demo.settings.doctests')
+    >>> startup('lino_welfare.projects.gerd.settings.doctests')
     >>> from lino.api.doctest import *
     
 

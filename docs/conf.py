@@ -22,7 +22,7 @@ from lino.sphinxcontrib import configure
 #configure(globals(), 'lino_welfare.projects.eupen.settings.demo')
 #configure(globals(), 'lino_welfare.projects.eupen.settings.doctests')
 #configure(globals(), 'lino_welfare.projects.std.settings.doctests')
-configure(globals(), "lino_weleup.demo.settings.doctests")
+configure(globals(), "lino_welfare.projects.gerd.settings.doctests")
 
 intersphinx_mapping = {}
 from atelier.sphinxconf import interproject
@@ -71,7 +71,7 @@ master_doc = 'index'
 
 # General information about the project.
 #~ project = u"Lino-Welfare"
-project = u"Lino Welfare Châtelet"
+project = u"Lino Welfare Eupen"
 copyright = '2012-2019 Rumma & Ko Ltd'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -133,7 +133,7 @@ pygments_style = str('sphinx')
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = project  # u"Lino Welfare Châtelet"
+html_title = project
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None

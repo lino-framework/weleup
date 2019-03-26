@@ -1,10 +1,10 @@
 .. _weleup:
 
-=====================
-Lino Welfare Châtelet
-=====================
+==================
+Lino Welfare Eupen
+==================
 
-Welcome to the central project homepage of **Lino Welfare Châtelet**.
+Welcome to the project homepage of **Lino Welfare Eupen**.
 
 
 .. toctree::
@@ -12,7 +12,5 @@ Welcome to the central project homepage of **Lino Welfare Châtelet**.
 
    about/index
    install/index
-   api/index
-   specs/index
    changes/index
 

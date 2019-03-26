@@ -80,10 +80,7 @@ SETUP_INFO.update(packages=[
     'lino_weleup',
     'lino_weleup.lib',
     'lino_weleup.lib.pcsw',
-    'lino_weleup.lib.pcsw.fixtures',
-    'lino_weleup.demo',
-    'lino_weleup.demo.settings',
-    'lino_weleup.demo.tests'
+    'lino_weleup.lib.pcsw.fixtures'
 ])
 
 SETUP_INFO.update(message_extractors={

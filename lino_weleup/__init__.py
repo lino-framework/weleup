@@ -9,7 +9,6 @@ The main package for :ref:`weleup`.
    :toctree:
 
    lib
-   demo
    settings
 
 

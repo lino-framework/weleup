@@ -8,7 +8,7 @@ ns = setup_from_tasks(
     revision_control_system='git',
     locale_dir='lino_weleup/locale',
     cleanable_files=['docs/api/lino_weleup.*'],
-    demo_projects=['lino_weleup.demo']
+    demo_projects=['lino_welfare.projects.gerd']
 )
 
     # apidoc_exclude_pathnames:
