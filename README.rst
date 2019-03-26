@@ -15,7 +15,7 @@ application developed and maintained for the PCSW of Eupen in Belgium.
 - The `central project homepage <http://weleup.lino-framework.org>`__ 
   contains change notes, technical specifications and test suites.
 
-- The `German project homepage <http://de.weleup.lino-framework.org>`__ 
+- The `German project homepage <http://de.welfare.lino-framework.org>`__ 
   contains release notes and end-user docs.
 
 - Online demo site at http://welfare-demo.lino-framework.org
