@@ -8,7 +8,7 @@ The ``lino-weleup`` package
 `Lino Welfare <http://welfare.lino-framework.org>`__
 application developed and maintained for the PCSW of Eupen in Belgium. 
 
-- The central project homepage is published http://weleup.lino-framework.org
+- The central project homepage is http://weleup.lino-framework.org
 
 - For *introductions* and *commercial information* 
   see `www.saffre-rumma.net
