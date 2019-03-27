@@ -8,12 +8,14 @@ The ``lino-weleup`` package
 `Lino Welfare <http://welfare.lino-framework.org>`__
 application developed and maintained for the PCSW of Eupen in Belgium. 
 
+- The central project homepage is published http://weleup.lino-framework.org
+
 - For *introductions* and *commercial information* 
-  please see `www.saffre-rumma.net
+  see `www.saffre-rumma.net
   <http://www.saffre-rumma.net/welfare/>`__.
 
-- The `central project homepage <http://weleup.lino-framework.org>`__ 
-  contains change notes, technical specifications and test suites.
+- Technical specifications and test suites are in 
+  `Lino Welfare <http://welfare.lino-framework.org>`__.
 
 - The `German project homepage <http://de.welfare.lino-framework.org>`__ 
   contains release notes and end-user docs.
