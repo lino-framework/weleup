@@ -1,4 +1,4 @@
-.. _tera.18.11.0:
+.. _weleup.18.11.0:
 
 ====================
 18.11.0 (coming)
@@ -15,6 +15,12 @@ Die Vorschau wird nicht automatisch angepasst, sondern nur auf Anfrage.
 Bei Bedarf ist zu klären, wie aktuell der testlino ist.
 
 NB: Für diese Version gibt es noch keine Vorschau.
+
+Angefragte Änderungen
+
+- Steve 20190404 Falsche Altersberechnung. Fixed :ticket:`2946` Wrong age
+  display (leap year bug).
+
 
 Ungefragte Änderungen:
 
@@ -75,4 +81,7 @@ Vorschläge für neue Features
 - Optional auf Anfrage: intelligente Ansicht Termine auch für
   cal.EntriesByClient?
 
-  
+- Lino hat eine neue Kalenderansicht, die irgendwann das momentane System
+  (:mod:`lino_xl.lib.extensible`) ersetzen wird.
+
+- Wir werden beim nächsten Release voraussichtlich auf Python 3 umsteigen.
