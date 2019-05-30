@@ -236,11 +236,11 @@ Start the last data migration::
     $ go testlino
     $ sudo service apache2 stop
     $ sudo service supervisor stop
-    $ ./initdb_testing_from_prod.sh
+    $ ./initdb_preview_from_prod.sh
 
 The data migration lasts about 1:30 hours.  When it is done::
 
-    $ swap testing and prod
+    $ swap preview and prod
 
     $ sudo service apache2 start
     $ sudo service supervisor start
