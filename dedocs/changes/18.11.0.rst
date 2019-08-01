@@ -21,6 +21,19 @@ Angefragte Änderungen
 - Steve 20190404 Falsche Altersberechnung. Fixed :ticket:`2946` Wrong age
   display (leap year bug).
 
+- Vermerk "zzgl. MWSt." in Bescheinigung Schatztruhe (:ticket:`3142`).
+
+- Man kann jetzt Texte direkt aus Word kopieren, ohne deshalb potentielle
+  Probleme beim Ausdruck zu riskieren (:ticket:`3026` "bleaching")
+
+Technologisch bedingte Änderungen
+
+- Die neue Version wird auf einem neuen Server laufen unter Debian 10 und Python
+  3. Nicht mehr mit Apache sondern mit nginx als Webserver.
+
+- Authentifizierung wird weiterhin über den LDAP-Server, aber nicht mehr über
+  die veraltete Methode "http auth", sondern man kann sich ein- und ausloggen,
+  ohne den Browser neu zu starten.
 
 Ungefragte Änderungen:
 
@@ -31,7 +44,7 @@ Ungefragte Änderungen:
   sichtbar (d.h. Systemverwalter), und auch nicht mehr für alle
   Datenmodelle.
 
-- properties.PersonProperty heisst jetzt cv.PersonProperty (erfordert
+- properties.PersonProperty heißt jetzt cv.PersonProperty (erfordert
   Datenmigration)
 
 - Partner haben jetzt keine Detail-Ansicht mehr und man kann in der
@@ -46,16 +59,22 @@ TODO
   den Feldern company und contact_person. Ein summary view mit
   Insert-Button (wie bei den Notizen) scheint mir hier Overkill, weil
   es selten mehr als 15 Vertragspartner gibt.
-  
 
-Zu testen  
-  
-- Das Detail einer Anwesenheit ist jetzt in einem kleineren Fenster,
-  denn der größte Teil des Bildschirms war sowieso unbenutzt.  Und in
-  manchen Ansichten zeigte Lino nicht `Klient` sondern `Partner` an.
-  Obwohl in Lino Welfare werden Anwesenheiten nur für Klienten erfasst
-  werden, nie für andere Leute.
+Zu testen
+
+- Das Detail einer Anwesenheit ist jetzt in einem kleineren Fenster, denn der
+  größte Teil des Bildschirms war sowieso unbenutzt.  Und in manchen Ansichten
+  zeigte Lino nicht `Klient` sondern `Partner` an. Obwohl in Lino Welfare werden
+  Anwesenheiten nur für Klienten erfasst werden, nie für andere Leute.
   (20181008)
+
+- Optional auf Anfrage: intelligente Ansicht Termine auch für
+  cal.EntriesByClient?
+
+- Anwesenheiten pro Klient
+
+- Lino hat eine neue Kalenderansicht, die irgendwann das momentane System
+  (:mod:`lino_xl.lib.extensible`) ersetzen wird.
 
 Vorschläge für neue Features
 
@@ -76,12 +95,4 @@ Vorschläge für neue Features
   hilfreich sein beim Formulieren von Änderungswünschen
   bzgl. Zugriffsrechten. (20181008)
 
-- Lino könnte jetzt row-level edit locking für Klienten.
-  
-- Optional auf Anfrage: intelligente Ansicht Termine auch für
-  cal.EntriesByClient?
-
-- Lino hat eine neue Kalenderansicht, die irgendwann das momentane System
-  (:mod:`lino_xl.lib.extensible`) ersetzen wird.
-
-- Wir werden beim nächsten Release voraussichtlich auf Python 3 umsteigen.
+- Lino könnte jetzt row-level edit locking für Klienten machen.
