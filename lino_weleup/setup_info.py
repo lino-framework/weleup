@@ -23,32 +23,32 @@ else:
     requires.append('suds-py3')
     # requires.append('suds-jurko')
 
-    
-    
+
+
 SETUP_INFO = dict(
     name='lino-weleup',
-    version='19.3.0',
+    version='19.9.0',
     install_requires=requires,
     test_suite='tests',
     tests_require=['pytest'],
     include_package_data=True,
-    zip_safe=False,    
+    zip_safe=False,
     description=u"A Lino Welfare for the PCSW of Châtelet",
     long_description=u"""\
-**Lino Welfare Eupen** is a 
+**Lino Welfare Eupen** is a
 `Lino Welfare <http://welfare.lino-framework.org>`__
-application developed and maintained for the PCSW of Eupen in Belgium. 
+application developed and maintained for the PCSW of Eupen in Belgium.
 
 - The central project homepage is http://weleup.lino-framework.org
 
-- For *introductions* and *commercial information* 
+- For *introductions* and *commercial information*
   see `www.saffre-rumma.net
   <http://www.saffre-rumma.net/welfare/>`__.
 
-- Technical specifications and test suites are in 
+- Technical specifications and test suites are in
   `Lino Welfare <http://welfare.lino-framework.org>`__.
 
-- The `German project homepage <http://de.welfare.lino-framework.org>`__ 
+- The `German project homepage <http://de.welfare.lino-framework.org>`__
   contains release notes and end-user docs.
 
 - Online demo site at http://welfare-demo.lino-framework.org
