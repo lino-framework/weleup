@@ -27,7 +27,7 @@ else:
 
 SETUP_INFO = dict(
     name='lino-weleup',
-    version='19.9.0',
+    version='19.9.1',
     install_requires=requires,
     test_suite='tests',
     tests_require=['pytest'],
