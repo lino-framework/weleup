@@ -2,6 +2,4 @@
 Kommende Version
 ================
 
-Siehe :doc:`18.11.0`.
-
-
+Siehe :doc:`19.11.0`.
