@@ -14,7 +14,7 @@ class Site(Site):
 
     def get_default_language(self):
         return 'de'
-    
+
     def get_apps_modifiers(self, **kw):
         kw = super(Site, self).get_apps_modifiers(**kw)
         kw.update(badges=None)  # remove the badges app
@@ -38,7 +38,7 @@ class Site(Site):
     #     yield self.modules.cal.MyTasks
     #     yield self.modules.reception.WaitingVisitors
     #     #~ yield self.modules.reception.ReceivedVisitors
-        
+
     #     if user.authenticated:
     #         yield self.models.notify.MyMessages
 
@@ -50,7 +50,7 @@ class Site(Site):
         clients.ClientContactsByType
         """)
         ctt.column_names = "id name can_refund is_bailiff"
-            
+
         super(Site, self).do_site_startup()
 
         from lino.utils.watch import watch_changes as wc
@@ -71,4 +71,4 @@ class Site(Site):
         from lino_welfare.modlib.cbss.mixins import CBSSRequest
         wc(CBSSRequest, master_key='person__partner_ptr')
 
-
+        self.modules.contacts.Person.disable_create_choice = True
