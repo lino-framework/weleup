@@ -7,27 +7,18 @@
 #
 #   $ python setup.py test -s tests.PackagesTests
 
-import sys
-PY2 = sys.version_info[0] == 2
-
-
 requires = ['lino-welfare',
             'pytidylib',
             'django-iban', 'metafone',
             'cairocffi']
-if PY2:
-    requires.append('channels<2')
-    requires.append('suds')
-else:
-    requires.append('channels')
-    requires.append('suds-py3')
-    # requires.append('suds-jurko')
-
+requires.append('channels')
+requires.append('suds-py3')
+# requires.append('suds-jurko')
 
 
 SETUP_INFO = dict(
     name='lino-weleup',
-    version='19.9.1',
+    version='19.12.0',
     install_requires=requires,
     test_suite='tests',
     tests_require=['pytest'],
