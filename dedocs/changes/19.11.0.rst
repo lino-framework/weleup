@@ -37,6 +37,8 @@ Technologisch bedingte Änderungen
 
 Ungefragte Änderungen:
 
+- Im Titelbalken eines Detail-Fensters kann man jetzt zurück klicken.
+
 - Termine eines Vertrags werden jetzt chronologisch absteigend
   angezeigt.
 
