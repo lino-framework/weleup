@@ -1,36 +1,76 @@
-.. _weleup.18.11.0:
-.. _weleup.19.11.0:
+==============
+Coming version
+==============
 
-====================
-19.11.0 (coming)
-====================
+These are the :term:`release notes` for the coming :ref:`weleup` version, which
+will probably be 20.2.0.
 
-Diese Seite wird nicht länger gewartet.
-Releasenotizen werden jetzt in Englisch geschrieben und stehen unter
-https://weleup.lino-framework.org/changes/coming.html
+This release is mainly for technical reasons to migrate from Python 2 to 3 and
+from Debian Lenny to Buster.
+
+.. contents::
+  :local:
 
 
-Vorankündigungen für die kommende Version.
+Requested changes
+=================
 
-Die Vorschau (testlino) befindet sich in der Entwicklungsphase:
-Neuerungen können ausprobiert werden, aber es sollte noch nicht
-systematisch getestet werden, da noch neue Features hinzukommen
-könnten.
+- The Tx25 works again.  :mod:`lino_welfare.modlib.cbss`
 
-Die Vorschau wird nicht automatisch angepasst, sondern nur auf Anfrage.
-Bei Bedarf ist zu klären, wie aktuell der testlino ist.
+- Fixed :ticket:`2946` (Wrong age display (leap year bug)) (Steve 20190404
+  "Falsche Altersberechnung")
 
-Angefragte Änderungen
+- Added a text "Tous les montants sont mentionnés hors T.V.A." in the
+  :xfile:`aids/Confirmation/clothing_bank.body.html` template. Vermerk "zzgl.
+  MWSt." in Bescheinigung Schatztruhe (:ticket:`3142`).
 
-- Die Tx25 funktioniert jetzt wieder
+- (:ticket:`3026` "bleaching")
+  Man kann jetzt Texte direkt aus Word kopieren, ohne deshalb potentielle
+  Probleme beim Ausdruck zu riskieren
 
-- Steve 20190404 Falsche Altersberechnung. Fixed :ticket:`2946` Wrong age
-  display (leap year bug).
+Unrequested changes
+===================
 
-- Vermerk "zzgl. MWSt." in Bescheinigung Schatztruhe (:ticket:`3142`).
+The ordering of toolbar buttons changed slightly.
 
-- Man kann jetzt Texte direkt aus Word kopieren, ohne deshalb potentielle
-  Probleme beim Ausdruck zu riskieren (:ticket:`3026` "bleaching")
+New database field :attr:`lino_xl.lib.cal.RecurrenceSet.positions` in the tables
+:class:`cal.EventPolicy <lino_xl.lib.cal.EventPolicy>` (Recurrency policies),
+:class:`cal.RecurrentEvent <lino_xl.lib.cal.RecurrentEvent>` and
+:class:`isip.ExamPolicy <lino_welfare.modlib.isip.ExamPolicy>`.
+Fixes :ticket:`3225`. (book 2019-10-08)
+
+Fixed two unreported minor bugs:  The detail view of a calendar presence is now
+in a smaller window than before. Because the biggest part of that window was not
+used. In some views of a presence, Lino didn't show a pointer to "Client" but to
+"Partner" (although in welfare the guest of a calendar entry are always
+clients). (20181008)
+
+
+Migration notes
+===============
+
+Migration is done as follows:
+
+- on old site, run::
+
+    $ go prod
+    $ python manage.py dump2py -o snapshot2preview
+
+  Note that there is a file :xfile:`restore2preview.py` in the :xfile:`snapshot2preview`
+  directory which will not be touched. You can say::
+
+    diff restore.py restore2preview.py
+
+  to see the database changes that need a manual patch.
+
+- on the new site, run::
+
+    $ go prod
+    $ a
+    $ pull.sh
+    $ ./initdb_from_prod.sh
+    ¤ restart_services.sh
+
 
 Technologisch bedingte Änderungen
 
@@ -67,7 +107,6 @@ Verschiedenes:
   ohne den Browser neu zu starten.
 
 
-
 TODO
 
 - :ticket:`2619` Vertragspartner einer VSE per Doppelklick eingeben.
@@ -79,11 +118,6 @@ TODO
 
 Zu testen
 
-- Das Detail einer Anwesenheit ist jetzt in einem kleineren Fenster, denn der
-  größte Teil des Bildschirms war sowieso unbenutzt.  Und in manchen Ansichten
-  zeigte Lino nicht `Klient` sondern `Partner` an. Obwohl in Lino Welfare werden
-  Anwesenheiten nur für Klienten erfasst werden, nie für andere Leute.
-  (20181008)
 
 - Optional auf Anfrage: intelligente Ansicht Termine auch für
   cal.EntriesByClient?
@@ -118,3 +152,15 @@ Vorschläge für neue Features
 Technisches:
 
 - cron-Jobs prüfen und manuell rüber holen.
+
+
+Technical notes
+===============
+
+>>> from lino import startup
+>>> startup('lino_welfare.projects.gerd.settings.doctests')
+>>> from lino.api.doctest import *
+
+>>> from lino_xl.lib.cal.mixins import RecurrenceSet
+>>> rt.models_by_base(RecurrenceSet)
+[<class 'lino_xl.lib.cal.models.EventPolicy'>, <class 'lino_xl.lib.cal.models.RecurrentEvent'>, <class 'lino_welfare.modlib.isip.models.ExamPolicy'>]
