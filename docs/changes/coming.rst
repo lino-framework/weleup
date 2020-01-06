@@ -24,6 +24,8 @@ TODO
 
 - presences by client : any changes?
 
+- change 3rd language from nl to en?
+
 
 
 Summary for end users
