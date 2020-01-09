@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-# Copyright 2002-2019 Rumma & Ko Ltd
+# Copyright 2002-2020 Rumma & Ko Ltd
 # License: BSD (see file COPYING for details)
 
 # This module is part of the Lino Welfare test suite.
@@ -18,7 +18,7 @@ requires.append('suds-py3')
 
 SETUP_INFO = dict(
     name='lino-weleup',
-    version='19.12.0',
+    version='20.1.0',
     install_requires=requires,
     test_suite='tests',
     tests_require=['pytest'],
@@ -51,7 +51,6 @@ application developed and maintained for the PCSW of Eupen in Belgium.
     license='BSD-2-Clause',
     classifiers="""\
 Programming Language :: Python
-Programming Language :: Python :: 2
 Programming Language :: Python :: 3
 Development Status :: 5 - Production/Stable
 Environment :: Web Environment
