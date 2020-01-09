@@ -20,12 +20,7 @@ TODO
 
 - check cron jobs
 
-- add a Partners.detail_layout (to reduce number of unrequested changes) ?
-
 - presences by client : any changes?
-
-- change 3rd language from nl to en?
-
 
 
 Summary for end users
@@ -41,9 +36,9 @@ Summary for end users
   Probleme beim Ausdruck zu riskieren.
   (:ticket:`3026` "bleaching")
 
-- Partner haben jetzt keine Detail-Ansicht mehr und man kann in der
-  Partnerliste nicht mehr direkt einen abstrakten Partner erstellen, sondern muss
-  dafür in Organisationen, Haushalte oder Personen oder Klienten gehen.
+- Man kann in der Partnerliste nicht mehr direkt einen abstrakten Partner
+  erstellen, sondern muss dafür in Organisationen, Haushalte oder Personen oder
+  Klienten gehen.
 
 - Neue Tabelle :class:`lino.modlib.users.UserRoles` könnte
   hilfreich sein beim Formulieren von Änderungswünschen
@@ -85,6 +80,9 @@ Zukunft / Vorschläge für neue Features
 - Lino könnte jetzt row-level edit locking für Klienten machen.
 
 - intelligente Ansicht Termine auch für cal.EntriesByClient?
+
+- Sprache EN einführen? Cannot change 3rd language from NL to EN because 38
+  partners have language=="nl".
 
 
 Requested changes
