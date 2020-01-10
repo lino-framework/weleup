@@ -26,13 +26,20 @@ TODO
 Summary for end users
 =====================
 
-- Tx25 funktioniert wieder
+Es handelt sich hauptsächlich um ein technisch bedingtes Release.  Die neue
+Version wird auf einem neuen Server laufen unter Debian 10 und Python 3, aber
+folgende Änderungen werden auch für Endbenutzer sichtbar sein:
 
-- Bugfix "Falsche Altersberechnung" Steve 20190404.
+
+- Tx25 funktioniert theoretisch wieder. Ob das auch stimmt, muss können wir nur
+  gemeinsam mit euch testen, weil dazu eine "echte" Anfrage auf einem
+  registrierten Klienten gemacht werden muss.
+
+- Bugfix "Falsche Altersberechnung" (Steve 20190404).
 
 - Vermerk "zzgl. MWSt." in Bescheinigung Schatztruhe (:ticket:`3142`).
 
-- Man kann jetzt Texte direkt aus Word kopieren, ohne deshalb potentielle
+- Man kann jetzt Texte direkt aus Word kopieren, ohne deshalb anschließend
   Probleme beim Ausdruck zu riskieren.
   (:ticket:`3026` "bleaching")
 
@@ -40,29 +47,27 @@ Summary for end users
   erstellen, sondern muss dafür in Organisationen, Haushalte oder Personen oder
   Klienten gehen.
 
-- Neue Tabelle :class:`lino.modlib.users.UserRoles` könnte
+- Die neue Tabelle :class:`lino.modlib.users.UserRoles` (Explorer-Menü) könnte
   hilfreich sein beim Formulieren von Änderungswünschen
   bzgl. Zugriffsrechten. (20181008)
 
-- Vertragspartner einer VSE per Doppelklick eingeben (:ticket:`2619`). Hier
-  kommt jetzt ein kleines Fenster mit den Feldern company und contact_person.
-  Ein summary view mit Insert-Button (wie bei den Notizen) scheint Overkill,
-  weil es selten mehr als 15 Vertragspartner gibt.
+- Vertragspartner einer VSE kann man jetzt per Doppelklick eingeben
+  (:ticket:`2619`). Hier kommt jetzt ein kleines Fenster mit den Feldern company
+  und contact_person. Ein summary view mit Insert-Button (wie bei den Notizen)
+  scheint Overkill, weil es selten mehr als 15 Vertragspartner gibt.
 
-
-
-Technologisch bedingte Änderungen
-
-- Die neue Version wird auf einem neuen Server laufen unter Debian 10 und Python
-  3.
 
 Zukunft / Vorschläge für neue Features
+======================================
+
+Über folgende Themen haben wir bei Gelegenheit gesprochen. Nichts davon ist
+dringend oder zwingend.
+
 
 - Lino hat eine neue Kalenderansicht, die irgendwann das momentane System
   (:mod:`lino_xl.lib.extensible`) ersetzen wird.
 
 - Irgendwann kommt der Umstieg auf die neue Benutzeroberfläche (:ref:`react`).
-  Das könnten wir bei Gelegenheit mal testen.
 
 - Desktop Notifications (:ticket:`923`).  Vorteile: (1) akustisches
   Signal, (2) kommt auch dann, wenn Lino minimiert ist, (3) belastet
@@ -79,7 +84,7 @@ Zukunft / Vorschläge für neue Features
 
 - Lino könnte jetzt row-level edit locking für Klienten machen.
 
-- intelligente Ansicht Termine auch für cal.EntriesByClient?
+- Intelligente Ansicht Termine auch für cal.EntriesByClient?
 
 - Sprache EN einführen? Cannot change 3rd language from NL to EN because 38
   partners have language=="nl".
