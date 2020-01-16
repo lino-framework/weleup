@@ -56,13 +56,14 @@ folgende Änderungen werden auch für Endbenutzer sichtbar sein:
   und contact_person. Ein summary view mit Insert-Button (wie bei den Notizen)
   scheint Overkill, weil es selten mehr als 15 Vertragspartner gibt.
 
+- Statt "Upload" sagt Lino jetzt "Upload-Datei".
+
 
 Zukunft / Vorschläge für neue Features
 ======================================
 
 Über folgende Themen haben wir bei Gelegenheit gesprochen. Nichts davon ist
 dringend oder zwingend.
-
 
 - Lino hat eine neue Kalenderansicht, die irgendwann das momentane System
   (:mod:`lino_xl.lib.extensible`) ersetzen wird.
