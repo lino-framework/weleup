@@ -138,14 +138,16 @@ Migration is done as follows:
 - on old site, run::
 
     $ go prod
+    $ a
     $ python manage.py dump2py -o snapshot2preview
 
-  Note that there is a file :xfile:`restore2preview.py` in the :xfile:`snapshot2preview`
-  directory which will not be touched. You can say::
+  Note that there is a file :xfile:`restore2preview.py` in the
+  :xfile:`snapshot2preview` directory which will not be touched. To see the
+  database changes that need a manual patch, you can say::
 
     diff restore.py restore2preview.py
 
-  to see the database changes that need a manual patch.
+
 
 - on the new site, run::
 
