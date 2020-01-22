@@ -1,12 +1,6 @@
 # -*- coding: UTF-8 -*-
-# Copyright 2014-2018 Rumma & Ko Ltd
+# Copyright 2014-2020 Rumma & Ko Ltd
 # License: BSD (see file COPYING for details)
-
-from __future__ import unicode_literals
-from __future__ import print_function
-
-import logging
-logger = logging.getLogger(__name__)
 
 from django.utils.translation import ugettext_lazy as _
 
@@ -30,7 +24,7 @@ class Client(Client):
 
     is_cpas = models.BooleanField(_("receives social help"), default=False)
     is_senior = models.BooleanField(_("is senior"), default=False)
-    
+
     health_insurance = dd.ForeignKey(
         'contacts.Company', blank=True, null=True,
         verbose_name=_("Health insurance"),
@@ -196,4 +190,3 @@ cbss_summary
 
 # no longer needed because Clients.client_detail is specified as a string:
 # Clients.detail_layout = ClientDetail()
-
