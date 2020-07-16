@@ -39,7 +39,7 @@ class Site(Site):
     #     yield self.modules.reception.WaitingVisitors
     #     #~ yield self.modules.reception.ReceivedVisitors
 
-    #     if user.authenticated:
+    #     if user.is_authenticated:
     #         yield self.models.notify.MyMessages
 
     def do_site_startup(self):
