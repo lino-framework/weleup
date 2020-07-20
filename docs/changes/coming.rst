@@ -3,7 +3,7 @@ Coming version
 ==============
 
 These are the :term:`release notes` for the coming :ref:`weleup` version, which
-will probably be 20.2.0.
+will probably be in July 2020.
 
 This release is mainly for technical reasons to migrate from Python 2 to 3 and
 from Debian Lenny to Buster.
@@ -157,8 +157,19 @@ Migration is done as follows:
     $ ./initdb_from_prod.sh
     ¤ restart_services.sh
 
+Checklist after migration:
 
+- Change ServerName in apache conf
 
+- In :xfile:`settings.py` :
+
+  - :setting:`ALLOWED_HOSTS`, :setting:`ADMINS_EMAIL`
+    :setting:`EMAIL_SUBJECT_PREFIX`
+
+  - in get_plugin_configs()::
+
+        yield ('cbss', 'cbss_environment', 'prod')
+        yield ('b2c', 'delete_imported_xml_files', False)
 
 
 Technical notes
