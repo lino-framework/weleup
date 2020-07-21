@@ -19,7 +19,7 @@ Technische Info unter :mod:`lino_welfare.modlib.aids`.
     >>> from lino import startup
     >>> startup('lino_welfare.projects.gerd.settings.doctests')
     >>> from lino.api.doctest import *
-    
+
 
 
 
@@ -270,7 +270,7 @@ Bestätigungstext haben) hier die gleichen Texte als HTML:
 
     from lino.api.doctest import *
     from django.utils import translation
-    from atelier.rstgen import header
+    from rstgen import header
     ses = rt.login("rolf")
     translation.activate('de')
 
@@ -288,7 +288,7 @@ Bestätigungstext haben) hier die gleichen Texte als HTML:
             for ln in ses.get_data_value(ex, 'preview').splitlines():
                 print("    " + ln)
             print("")
-    
+
             print(header(6, "Vorlage"))
             print("::")
             print("")
@@ -297,6 +297,3 @@ Bestätigungstext haben) hier die gleichen Texte als HTML:
             print("")
 
     print("")
-
-
-
