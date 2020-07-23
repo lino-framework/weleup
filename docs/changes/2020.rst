@@ -16,4 +16,4 @@ See also :ref:`welfare.changes.2020`.
 2020-01-03
 ==========
 
-We started writing release notes in :doc:`coming`.
+We started writing release notes in :doc:`20200722`.
