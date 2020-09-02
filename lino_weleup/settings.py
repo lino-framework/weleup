@@ -71,4 +71,4 @@ class Site(Site):
         from lino_welfare.modlib.cbss.mixins import CBSSRequest
         wc(CBSSRequest, master_key='person__partner_ptr')
 
-        self.modules.contacts.Person.disable_create_choice = True
+        # self.modules.contacts.Person.disable_create_choice = True
