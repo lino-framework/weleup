@@ -93,4 +93,5 @@ Hier einige Beispiele von Ausdrucken aus der Demo-Datenbank.
 
    from lino_xl.lib.excerpts.doctools import show_excerpts
    print(show_excerpts())
-   
+
+Siehe auch die technische Dokumentation in :ref:`welfare.specs.aids`.
