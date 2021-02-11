@@ -1,120 +1,120 @@
 # Translations template for lino-weleup.
-# Copyright (C) 2019 ORGANIZATION
+# Copyright (C) 2021 ORGANIZATION
 # This file is distributed under the same license as the lino-weleup
 # project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: lino-weleup 19.3.0\n"
+"Project-Id-Version: lino-weleup 20.8.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-03-29 13:26+0200\n"
+"POT-Creation-Date: 2021-02-11 21:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.9.0\n"
 
-#: lino_weleup/lib/pcsw/models.py:41
+#: lino_weleup/lib/pcsw/models.py:21
 msgid "Remarks (Social Office)"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:42
+#: lino_weleup/lib/pcsw/models.py:22
 msgid "Gesdos ID"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:43
+#: lino_weleup/lib/pcsw/models.py:23
 msgid "TIM ID"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:45
+#: lino_weleup/lib/pcsw/models.py:25
 msgid "receives social help"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:46
+#: lino_weleup/lib/pcsw/models.py:26
 msgid "is senior"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:50
+#: lino_weleup/lib/pcsw/models.py:30
 msgid "Health insurance"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:54
+#: lino_weleup/lib/pcsw/models.py:34
 msgid "Pharmacy"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:58
+#: lino_weleup/lib/pcsw/models.py:38
 msgid "unemployment benefit"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:60
+#: lino_weleup/lib/pcsw/models.py:40
 msgid "waiting pay"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:62
+#: lino_weleup/lib/pcsw/models.py:42
 msgid "sickness benefit"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:64
+#: lino_weleup/lib/pcsw/models.py:44
 msgid "retirement pension"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:66
+#: lino_weleup/lib/pcsw/models.py:46
 msgid "other incomes"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:70
+#: lino_weleup/lib/pcsw/models.py:50
 msgid "Job agents"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:94
+#: lino_weleup/lib/pcsw/models.py:74
 msgid "Person"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:115
+#: lino_weleup/lib/pcsw/models.py:95
 msgid "Human Links"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:131
+#: lino_weleup/lib/pcsw/models.py:111
 msgid "Job search"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:137
+#: lino_weleup/lib/pcsw/models.py:117
 msgid "Aids"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:157
+#: lino_weleup/lib/pcsw/models.py:137
 msgid "History"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:169
+#: lino_weleup/lib/pcsw/models.py:149
 msgid "Calendar"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:178
+#: lino_weleup/lib/pcsw/models.py:158
 msgid "Miscellaneous"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:186
+#: lino_weleup/lib/pcsw/models.py:166
 msgid "Career"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:191
+#: lino_weleup/lib/pcsw/models.py:171
 msgid "Languages"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:196
+#: lino_weleup/lib/pcsw/models.py:176
 msgid "Competences"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:202
+#: lino_weleup/lib/pcsw/models.py:182
 msgid "Contracts"
 msgstr ""
 
-#: lino_weleup/lib/pcsw/models.py:209
+#: lino_weleup/lib/pcsw/models.py:189
 msgid "CBSS"
 msgstr ""
 
