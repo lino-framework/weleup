@@ -18,7 +18,7 @@ requires.append('suds-py3')
 
 SETUP_INFO = dict(
     name='lino-weleup',
-    version='21.3.0',
+    version='21.3.1',
     install_requires=requires,
     test_suite='tests',
     tests_require=['pytest'],
