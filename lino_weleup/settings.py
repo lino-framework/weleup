@@ -4,16 +4,11 @@
 from lino_welfare.modlib.welfare.settings import *
 
 class Site(Site):
-    languages = 'de fr en'
-    hidden_languages = None
     # use_websockets = True
 
     help_url = "http://de.welfare.lino-framework.org"
     demo_fixtures = """std std2 few_languages props all_countries
     demo payments demo2 cbss checkdata checksummaries""".split()
-
-    def get_default_language(self):
-        return 'de'
 
     def get_apps_modifiers(self, **kw):
         kw = super(Site, self).get_apps_modifiers(**kw)
