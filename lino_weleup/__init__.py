@@ -17,8 +17,8 @@ The main package for :ref:`weleup`.
 
 from .setup_info import SETUP_INFO
 
-doc_trees = ['docs' ] #, 'dedocs']
-intersphinx_urls = dict(
-    docs="https://weleup.lino-framework.org"
-    )
+# doc_trees = ['docs' ] #, 'dedocs']
+# intersphinx_urls = dict(
+#     docs="https://weleup.lino-framework.org"
+#     )
 srcref_url = 'https://github.com/lino-framework/weleup/blob/master/%s'
