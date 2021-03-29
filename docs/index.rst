@@ -12,5 +12,3 @@ Welcome to the project homepage of **Lino Welfare Eupen**.
 
    about/index
    install/index
-   changes/index
-

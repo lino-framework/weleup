@@ -1,6 +1,0 @@
-==============
-Coming version
-==============
-
-.. contents::
-  :local:
