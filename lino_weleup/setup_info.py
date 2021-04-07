@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # Copyright 2002-2020 Rumma & Ko Ltd
-# License: BSD (see file COPYING for details)
+# License: GNU Affero General Public License v3 (see file COPYING for details)
 
 # This module is part of the Lino Welfare test suite.
 # To test only this module:
@@ -47,8 +47,8 @@ application developed and maintained for the PCSW of Eupen in Belgium.
 """,
     author='Luc Saffre',
     author_email='luc@lino-framework.org',
-    url="http://weleup.lino-framework.org",
-    license='BSD-2-Clause',
+    url="https://github.com/lino-framework/weleup",
+    license_files=['COPYING'],
     classifiers="""\
 Programming Language :: Python
 Programming Language :: Python :: 3
@@ -57,7 +57,7 @@ Environment :: Web Environment
 Framework :: Django
 Intended Audience :: Developers
 Intended Audience :: System Administrators
-License :: OSI Approved :: BSD License
+License :: OSI Approved :: GNU Affero General Public License v3
 Natural Language :: English
 Natural Language :: French
 Natural Language :: German
