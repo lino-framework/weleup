@@ -22,3 +22,4 @@ from .setup_info import SETUP_INFO
 #     docs="https://weleup.lino-framework.org"
 #     )
 srcref_url = 'https://github.com/lino-framework/weleup/blob/master/%s'
+doc_trees = []
