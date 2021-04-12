@@ -2,7 +2,7 @@
 The ``lino-weleup`` package
 ===========================
 
-
+Warning: This repository is no longer maintained. Development has moved to https://gitlab.com/lino-framework/weleup
 
 **Lino Welfare Eupen** is a
 `Lino Welfare <https://welfare.lino-framework.org>`__
